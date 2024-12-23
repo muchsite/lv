@@ -11,7 +11,7 @@ export default defineConfig({
       input: 'index.html',
     },
   },
-  base: '/frontend/',
+  base: '/',
   server: {
     proxy: {
       '/api': 'http://localhost:3000',
