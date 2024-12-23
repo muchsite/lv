@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useLoginMutation } from "../../store/api/auth";
 import { Helmet } from "react-helmet-async";
+import { useGetEmployesQuery } from "../../store/api/users";
 
 type TError = {
   status: number;
@@ -11,6 +12,7 @@ type TError = {
 };
 const Login: React.FC = () => {
   const [login] = useLoginMutation();
+  const { refetch } = useGetEmployesQuery();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [checkbox, setCheckbox] = useState(false);
@@ -30,6 +32,7 @@ const Login: React.FC = () => {
         sessionStorage.setItem("user", res.user.id);
         sessionStorage.setItem("userType", res.user.role);
       }
+      await refetch();
       navigation("/");
     } catch (error) {
       const err = error as TError;
@@ -69,7 +72,6 @@ const Login: React.FC = () => {
               onChange={(e) => setPassword(e.currentTarget.value)}
               className={`${wrongPassword && "wrong_input_input"}`}
             />
-
             {wrongPassword && <div className="wrong_input">Wrong password</div>}
           </div>
           <div className="remember_input">

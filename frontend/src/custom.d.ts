@@ -15,3 +15,7 @@ interface ImportMetaEnv {
 interface ImportMeta {
     readonly env: ImportMetaEnv;
 }
+declare module '*.scss' {
+    const content: Record<string, string>;
+    export default content;
+}

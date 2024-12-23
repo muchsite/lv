@@ -18,7 +18,12 @@ const Home: React.FC = () => {
   const [searchAdvanced, setSearchAdvanced] = useState(false);
   const [displayGrid, setDisplayGrid] = useState("grid");
   const [basicInput, setBasicIput] = useState("");
-  const { data: allEmployes, isLoading, isError } = useGetEmployesQuery();
+  const {
+    data: allEmployes,
+    isLoading,
+    isError,
+    error,
+  } = useGetEmployesQuery();
   const [filteredCardsData, setFilteredCardsData] = useState<IEmploye[]>([]);
   const [buildings, setBuildings] = useState<string[]>([]);
   const [departments, setDepartments] = useState<string[]>([]);
@@ -88,7 +93,7 @@ const Home: React.FC = () => {
       setFilteredCardsData(searchedData);
     }
   };
-
+  const err = error as { data: string };
   return (
     <>
       <Helmet>
@@ -96,7 +101,7 @@ const Home: React.FC = () => {
       </Helmet>
       {isLoading ? (
         <Loading />
-      ) : isError ? (
+      ) : isError && err.data == "User is not logged in" ? (
         <Navigate to="/login" />
       ) : (
         <div className="cards_container">
