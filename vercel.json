@@ -10,8 +10,5 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/index.js" },
-    { "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }] }
-  ]
+  "routes": [{ "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }] }]
 }
