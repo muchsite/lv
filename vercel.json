@@ -10,5 +10,5 @@
       "use": "@vercel/node"
     }
   ],
-  "rewrites": [{ "source": "/:a*", "destination": "/" }]
+  "rewrites": [{ "source": "*", "destination": "/" }]
 }
