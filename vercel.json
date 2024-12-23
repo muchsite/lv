@@ -14,5 +14,5 @@
     { "src": "/api/(.*)", "dest": "/api/index.js" },
     { "src": "/(.*)", "dest": "/frontend/dist/index.html" }
   ],
-  "errorPage": "/frontend/dist/index.html"
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
