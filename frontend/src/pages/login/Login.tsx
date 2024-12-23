@@ -18,11 +18,13 @@ const Login: React.FC = () => {
   const [checkbox, setCheckbox] = useState(false);
   const [wrongEmail, setWrongEmail] = useState(false);
   const [wrongPassword, setWrongPassword] = useState(false);
+  const [sometingWentWrong, setSometingWentWrong] = useState(false);
   const navigation = useNavigate();
   const submitForm = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setWrongPassword(false);
     setWrongEmail(false);
+    setSometingWentWrong(false);
     try {
       const res = await login({ email, password }).unwrap();
       if (checkbox) {
@@ -38,11 +40,12 @@ const Login: React.FC = () => {
       const err = error as TError;
       if (err.status && err.status === 404) {
         setWrongEmail(true);
-      }
-      if (err.status && err.status === 401) {
+      } else if (err.status && err.status === 401) {
         setWrongPassword(true);
+      } else {
+        setSometingWentWrong(true);
+        console.log(error);
       }
-      console.log(error);
     }
   };
   return (
@@ -88,6 +91,11 @@ const Login: React.FC = () => {
             <button type="submit">Log In</button>
             <Link to="/signup">Sign Up</Link>
           </div>
+          {sometingWentWrong && (
+            <div className="s_wrong_input">
+              Someting Gone Wrong, Please try again
+            </div>
+          )}
         </form>
       </div>
     </>
