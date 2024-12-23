@@ -1,0 +1,71 @@
+.login_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background);
+  form {
+    background-color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30%;
+    .login_input {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      position: relative;
+      input {
+        padding: 1rem 0 1rem 1rem;
+        width: 100%;
+        border: 1px solid var(--text-secondary);
+        border-radius: 5px;
+        &::placeholder {
+          color: var(--text-muted);
+        }
+        &:focus {
+          outline: 1px solid var(--primary);
+        }
+      }
+      .wrong_input_input {
+        border: 1px solid red;
+      }
+      .wrong_input {
+        position: absolute;
+        bottom: 0;
+        translate: 0 110%;
+        color: red;
+      }
+    }
+    .login_btn_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: var(--primary);
+      }
+    }
+    button {
+      padding: 1rem 0;
+      background-color: var(--primary);
+      border-radius: 5px;
+      border: none;
+      outline: 1px solid var(--primary);
+      color: var(--white);
+      cursor: pointer;
+      transition: 0.3s;
+      width: 50%;
+      &:hover {
+        background-color: var(--white);
+        color: var(--primary);
+      }
+    }
+    .remember_input {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}

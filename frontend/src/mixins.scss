@@ -1,0 +1,53 @@
+@use "sass:map";
+$breack-up: (
+  "small": "600px",
+  "medium": "1164px",
+);
+$breack-down: (
+  "medium": "599px",
+  "large": "1163px",
+);
+
+@mixin breack_up($size) {
+  @media (min-width: map.get($breack-up, $size)) {
+    @content;
+  }
+}
+@mixin breack_down($size) {
+  @media (max-width: map.get($breack-down, $size)) {
+    @content;
+  }
+}
+@mixin button_primary {
+  padding: 1rem 0;
+  background-color: var(--primary);
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid var(--primary);
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+  @include breack_down(large) {
+    padding: 0.4rem;
+  }
+  &:hover {
+    background-color: var(--white);
+    color: var(--primary);
+  }
+}
+@mixin input {
+  padding: 1rem 0 1rem 0.5rem;
+  width: 100%;
+  border: 1px solid var(--text-secondary);
+  color: var(--text-secondary);
+  border-radius: 5px;
+  @include breack_down(large) {
+    padding: 0.4rem;
+  }
+  &::placeholder {
+    color: var(--text-muted);
+  }
+  &:focus {
+    outline: 1px solid var(--primary);
+  }
+}

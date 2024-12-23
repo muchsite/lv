@@ -1,0 +1,178 @@
+@use "../../mixins.scss";
+.settings_container {
+  padding: 1rem;
+  background-color: var(--background);
+  @include mixins.breack_down(medium) {
+    padding: 0.5rem;
+  }
+  .settings_content {
+    background-color: var(--background-card);
+    border-radius: 10px;
+    .settings_header {
+      padding: 2rem;
+      color: var(--text-primary);
+      @include mixins.breack_down(medium) {
+        padding: 1rem;
+        font-size: 1rem;
+      }
+    }
+    .setting_top {
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      border-top: 1px solid var(--text-muted);
+      color: var(--text-secondary);
+      @include mixins.breack_down(medium) {
+        padding: 1rem;
+        gap: 10px;
+      }
+      .settings_input {
+        position: relative;
+        width: 50%;
+        @include mixins.breack_down(medium) {
+          width: 40%;
+        }
+        img {
+          width: 1.5rem;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          translate: 1rem -50%;
+          @include mixins.breack_down(medium) {
+            width: 1rem;
+            translate: 0.4rem -50%;
+          }
+        }
+        input {
+          padding: 1rem 0 1rem 3rem;
+          border: 1px solid var(--text-secondary);
+          border-radius: 5px;
+          width: 80%;
+          @include mixins.breack_down(medium) {
+            width: 100%;
+            padding: 0.5rem 0 0.5rem 1.5rem;
+          }
+          &::placeholder {
+            color: var(--text-muted);
+          }
+          &:focus {
+            outline: 1px solid var(--primary);
+          }
+        }
+      }
+      .top_roles {
+        width: 30%;
+        @include mixins.breack_down(medium) {
+          width: 40%;
+        }
+      }
+    }
+    .settings_items_container {
+      display: flex;
+      flex-direction: column;
+      color: var(--text-primary);
+      .settings_item_container {
+        display: flex;
+        border-top: 1px solid var(--text-muted);
+        align-items: center;
+        padding: 1rem 0;
+        @include mixins.breack_down(medium) {
+          gap: 10px;
+
+          padding-right: 1rem;
+        }
+        .settings_item_first {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          width: 50%;
+          padding-left: 2rem;
+          @include mixins.breack_down(medium) {
+            padding-left: 1rem;
+            width: 40%;
+            gap: 0.4rem;
+            font-size: 12px;
+          }
+          img {
+            width: 4rem;
+            border-radius: 50%;
+            @include mixins.breack_down(medium) {
+              width: 3rem;
+            }
+          }
+        }
+        .settings_item_second {
+          width: 30%;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          @include mixins.breack_down(medium) {
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            width: 40%;
+          }
+          .settings_btns_container {
+            overflow: hidden;
+            border-radius: 8px;
+            display: flex;
+            outline: 1px solid var(--text-muted);
+            position: relative;
+            .settings_border {
+              width: 1px;
+              position: absolute;
+              height: 100%;
+              align-self: stretch;
+              background-color: var(--text-muted);
+              left: 50%;
+              translate: -50% 0;
+            }
+            p {
+              padding: 0.5rem 1rem;
+              color: var(--text-muted);
+              cursor: pointer;
+              width: 5rem;
+              text-align: center;
+              @include mixins.breack_down(medium) {
+                padding: 0.3rem;
+                font-size: 12px;
+                width: 4rem;
+              }
+            }
+            .active_role {
+              background-color: var(--primary);
+              color: var(--white);
+            }
+          }
+          .select_user {
+            cursor: pointer;
+            outline: 1px solid var(--primary);
+            padding: 0.2rem;
+            border-radius: 4px;
+            color: var(--primary);
+            @include mixins.breack_down(medium) {
+              font-size: 12px;
+            }
+          }
+        }
+        .settings_item_third {
+          p {
+            color: var(--text-muted);
+            border-radius: 8px;
+            outline: 1px solid var(--text-muted);
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            @include mixins.breack_down(medium) {
+              padding: 0.3rem;
+              font-size: 12px;
+            }
+          }
+          .active_role_admin {
+            background-color: var(--primary);
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@use "../../mixins.scss";
+.login_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background);
+
+  form {
+    background-color: var(--background-card);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30%;
+    border-radius: 10px;
+    @include mixins.breack_down(large) {
+      width: 80%;
+      color: var(--text-primary);
+    }
+
+    .login_input {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      position: relative;
+      input {
+        @include mixins.input;
+      }
+      .wrong_input_input {
+        border: 1px solid red;
+      }
+      .wrong_input {
+        position: absolute;
+        bottom: 0;
+        translate: 0 110%;
+        color: red;
+      }
+    }
+    button {
+      @include mixins.button_primary;
+    }
+    .remember_input {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}

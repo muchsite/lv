@@ -1,0 +1,89 @@
+@use "../../mixins.scss";
+.updat_form_container {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  @include mixins.breack_down(large) {
+    top: 0rem;
+  }
+  form {
+    background-color: var(--background-card);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: scroll;
+    max-height: calc(100vh - 6rem);
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    @include mixins.breack_down(large) {
+      position: relative;
+      top: 2rem;
+      width: 90%;
+    }
+    .card_modal_top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      .card_modal_logo {
+        width: 3rem;
+      }
+      .close_card_modal {
+        width: 1rem;
+        cursor: pointer;
+        filter: var(--svg-inactive);
+      }
+    }
+    label {
+      color: var(--text-primary);
+    }
+    .update_iputs_container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      @include mixins.breack_down(medium) {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+      }
+      .update_form_input {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        position: relative;
+        input {
+          @include mixins.input;
+        }
+      }
+    }
+    .card_modal_btns {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      gap: 2rem;
+      button {
+        width: 50%;
+        @include mixins.button_primary;
+      }
+    }
+  }
+  .card_form_backgound {
+    background-color: rgba(70, 70, 70, 0.815);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+}
+.no_scroll {
+  overflow: hidden;
+}

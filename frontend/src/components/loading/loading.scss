@@ -1,0 +1,56 @@
+@use "../../mixins.scss";
+.loading_container {
+  height: calc(100vh - 5rem);
+  padding: 0;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  @include mixins.breack_down(medium) {
+    height: calc(100vh - 3rem);
+  }
+  h1 {
+    color: var(--secondary);
+  }
+  .rl_loading_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    .rl_loading_thumb {
+      width: 10px;
+      height: 40px;
+      background-color: var(--secondary);
+      margin: 4px;
+      box-shadow: 0 0 12px 3px var(--shadow);
+      animation: rl-loading 1.5s ease-in-out infinite;
+    }
+
+    .rl_loading_thumb_1 {
+      animation-delay: 0s;
+    }
+
+    .rl_loading_thumb_2 {
+      animation-delay: 0.5s;
+    }
+
+    .rl_loading_thumb_3 {
+      animation-delay: 1s;
+    }
+  }
+}
+
+@keyframes rl-loading {
+  0% {
+  }
+  20% {
+    background: white;
+    transform: scale(1.5);
+  }
+  40% {
+    background: var(--secondary);
+    transform: scale(1);
+  }
+}

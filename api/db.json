@@ -1,0 +1,334 @@
+{
+  "users": [
+    {
+      "isRemoteWork": false,
+      "user_avatar": "/assets/avatar1.svg",
+      "first_name": "Luffy",
+      "last_name": "Monkey",
+      "first_native_name": "Luffy",
+      "last_native_name": "Monkey",
+      "middle_native_name": "D.",
+      "department": "Web & Mobile",
+      "building": "Pilsudskiego 69 (Poland)",
+      "room": "1404",
+      "date_birth": {
+        "year": 1921,
+        "month": 2,
+        "day": 1
+      },
+      "desk_number": 20,
+      "manager": {
+        "id": "987ff8cb-b506-4d5e-9166-ab8c644bb891",
+        "first_name": "John",
+        "last_name": "Snow"
+      },
+      "phone": "+12931293129",
+      "email": "luffy.monkey@leverx.com",
+      "skype": "live:.cid.21asd41jd1m132",
+      "cnumber": "C5336116",
+      "citizenship": "Georgia",
+      "visa": [
+        {
+          "issuing_country": "Poland",
+          "type": "National visa type D",
+          "start_date": 1652158800000,
+          "end_date": 1683608400000
+        }
+      ],
+      "id": "4386",
+      "password": "$2b$05$wEtYFEkZcrYvpQWxW7uB8u76cmFj/pVxfV14BPeCqMWJMesdctqRK",
+      "role": "user",
+      "sub": [],
+      "managerFirstName": "John",
+      "managerLastName": "Snow"
+    },
+    {
+      "isRemoteWork": true,
+      "user_avatar": "/assets/avatar3.svg",
+      "first_name": "Steve",
+      "last_name": "Cook",
+      "first_native_name": "Steve",
+      "last_native_name": "Cook",
+      "middle_native_name": "J",
+      "department": "Medicine",
+      "building": "Vinsmoke",
+      "room": "101",
+      "date_birth": {
+        "year": 1978,
+        "month": "3",
+        "day": 2
+      },
+      "desk_number": "7",
+      "manager": {
+        "id": "c1234567-def9-01gh-ijkl-23456789abcd",
+        "first_name": "Zef",
+        "last_name": "Red-Leg"
+      },
+      "phone": "+1234567890",
+      "email": "sanji.vinsmoke@leverx.com",
+      "skype": "live:.cid.sanji12345",
+      "cnumber": "C7654321",
+      "citizenship": "North Blue",
+      "visa": [
+        {
+          "issuing_country": "North Blue",
+          "type": "Chef license",
+          "start_date": 1612158800000,
+          "end_date": 1643694800000
+        }
+      ],
+      "id": "fd53",
+      "password": "$2b$05$Ep9eengLozeECjvQb7rwXOVFpMXvGVE3s1XxGkUU/nATyIURGrwGi",
+      "role": "admin",
+      "sub": [],
+      "managerFirstName": "Zef",
+      "managerLastName": "Red-Leg"
+    },
+    {
+      "isRemoteWork": false,
+      "user_avatar": "/assets/avatar2.svg",
+      "first_name": "Zoro",
+      "last_name": "Roronoa",
+      "first_native_name": "Zoro",
+      "last_native_name": "Roronoa",
+      "middle_native_name": "",
+      "department": "Web & Mobile",
+      "building": "Shinjuku HQ (Japan)",
+      "room": "1102",
+      "date_birth": {
+        "year": 1985,
+        "month": 11,
+        "day": 11
+      },
+      "desk_number": 15,
+      "manager": {
+        "id": "a1234567-bc89-45de-f012-3456789abcd",
+        "first_name": "Sanji",
+        "last_name": "Vinsmoke"
+      },
+      "phone": "+81734567890",
+      "email": "zoro.roronoa@leverx.com",
+      "skype": "live:.cid.98xyz543abc",
+      "cnumber": "C4567890",
+      "citizenship": "Japan",
+      "visa": [
+        {
+          "issuing_country": "Japan",
+          "type": "Work visa",
+          "start_date": 1671238800000,
+          "end_date": 1702774800000
+        }
+      ],
+      "id": "579e",
+      "password": "$2b$05$DfHRkh07nthljSgs0G3ByO6a2Jt2uw668UBFe1a78tl0OeEH7iThq",
+      "role": "hr",
+      "sub": ["41ff11b1d232", "1c9e", "c0e0", "02cf"]
+    },
+    {
+      "isRemoteWork": false,
+      "user_avatar": "/assets/avatar4.svg",
+      "first_name": "Usopp",
+      "last_name": "Sniper",
+      "first_native_name": "Usopp",
+      "last_native_name": "Sniper",
+      "middle_native_name": "",
+      "department": "Marketing",
+      "building": "Shinjuku HQ (Japan)",
+      "room": "2102",
+      "date_birth": {
+        "year": 1990,
+        "month": 4,
+        "day": 1
+      },
+      "desk_number": 16,
+      "manager": {
+        "id": "b1234567-cdef-67gh-ijkl-89012345abcd",
+        "first_name": "Franky",
+        "last_name": "Cyborg"
+      },
+      "phone": "+81987654321",
+      "email": "usopp.sniper@leverx.com",
+      "skype": "live:.cid.usopp12345",
+      "cnumber": "C8765432",
+      "citizenship": "Japan",
+      "visa": [
+        {
+          "issuing_country": "Japan",
+          "type": "Work visa",
+          "start_date": 1671238800000,
+          "end_date": 1702774800000
+        }
+      ],
+      "id": "6c3c",
+      "password": "",
+      "role": "user",
+      "sub": ["1c9e", "41ff11b1d232"]
+    },
+    {
+      "isRemoteWork": true,
+      "user_avatar": "/assets/avatar5.svg",
+      "first_name": "Sanji",
+      "last_name": "Vinsmoke",
+      "first_native_name": "Sanji",
+      "last_native_name": "Vinsmoke",
+      "middle_native_name": "",
+      "department": "Culinary",
+      "building": "Vinsmoke",
+      "room": "101",
+      "date_birth": {
+        "year": "2",
+        "month": "3",
+        "day": 2
+      },
+      "desk_number": "7",
+      "manager": {
+        "id": "c1234567-def9-01gh-ijkl-23456789abcd",
+        "first_name": "Zeff",
+        "last_name": "Red-Leg"
+      },
+      "phone": "+1234567890",
+      "email": "sanji.vinsmoke@leverx.com",
+      "skype": "live:.cid.sanji12345",
+      "cnumber": "C7654321",
+      "citizenship": "North Blue",
+      "visa": [
+        {
+          "issuing_country": "North Blue",
+          "type": "Chef license",
+          "start_date": 1612158800000,
+          "end_date": 1643694800000
+        }
+      ],
+      "id": "02cf",
+      "password": "",
+      "role": "user",
+      "sub": [
+        "bbee09590d95d",
+        "h0i610h9-6gd8-8851-2838-hf495c8h6h50",
+        "e7f307e6-3da5-553d-9505-ec16395e3e27",
+        "f8g408f7-4eb6-663f-0616-fd274a6f4f38",
+        "acb12345-67de-89ab-cdef-0123456789ab"
+      ]
+    },
+    {
+      "isRemoteWork": false,
+      "user_avatar": "/assets/avatar6.svg",
+      "first_name": "Robin",
+      "last_name": "Nico",
+      "first_native_name": "Robin",
+      "last_native_name": "Nico",
+      "middle_native_name": "",
+      "department": "Archaeology",
+      "building": "Ohara Library (West Blue)",
+      "room": "202",
+      "date_birth": {
+        "year": 1988,
+        "month": 2,
+        "day": 6
+      },
+      "desk_number": 11,
+      "manager": {
+        "id": "d1234567-ghij-23kl-mnop-45678901abcd",
+        "first_name": "Clover",
+        "last_name": "Professor"
+      },
+      "phone": "+4567890123",
+      "email": "robin.nico@leverx.com",
+      "skype": "live:.cid.robin12345",
+      "cnumber": "C1239876",
+      "citizenship": "West Blue",
+      "visa": [
+        {
+          "issuing_country": "West Blue",
+          "type": "Research visa",
+          "start_date": 1592158800000,
+          "end_date": 1623694800000
+        }
+      ],
+      "id": "c0e0",
+      "password": "",
+      "role": "hr",
+      "sub": ["c0e0", "1c9e"]
+    },
+    {
+      "isRemoteWork": true,
+      "user_avatar": "/assets/avatar7.svg",
+      "first_name": "Franky",
+      "last_name": "Cyborg",
+      "first_native_name": "Franky",
+      "last_native_name": "Cyborg",
+      "middle_native_name": "",
+      "department": "Engineering",
+      "building": "Water 7 Dock 1",
+      "room": "302",
+      "date_birth": {
+        "year": 1983,
+        "month": 6,
+        "day": 9
+      },
+      "desk_number": 8,
+      "manager": {
+        "id": "e1234567-hijk-45lm-nopq-67890123abcd",
+        "first_name": "Tom",
+        "last_name": "Shipwright"
+      },
+      "phone": "+7890123456",
+      "email": "franky.cyborg@leverx.com",
+      "skype": "live:.cid.franky12345",
+      "cnumber": "C6543210",
+      "citizenship": "Water 7",
+      "visa": [
+        {
+          "issuing_country": "Water 7",
+          "type": "Engineer license",
+          "start_date": 1681238800000,
+          "end_date": 1712774800000
+        }
+      ],
+      "id": "1c9e",
+      "password": "",
+      "role": "hr",
+      "sub": []
+    },
+    {
+      "id": "41ff11b1d232",
+      "isRemoteWork": false,
+      "user_avatar": "/assets/avatar2.svg",
+      "first_name": "John ",
+      "last_name": "Roronoa",
+      "first_native_name": "Zoro",
+      "last_native_name": "Roronoa",
+      "middle_native_name": "",
+      "department": "Web",
+      "building": "Shinjuku",
+      "room": "1102",
+      "date_birth": {
+        "year": 11,
+        "month": 11,
+        "day": 11
+      },
+      "desk_number": 15,
+      "manager": {
+        "id": "a1234567-bc89-45de-f012-3456789abcd",
+        "first_name": "New ",
+        "last_name": "Name"
+      },
+      "phone": "+81734567890",
+      "email": "new@user.com",
+      "skype": "live:.cid.98xyz543abc",
+      "cnumber": "C4567812",
+      "citizenship": "Japan",
+      "visa": [
+        {
+          "issuing_country": "Japan",
+          "type": "Work visa",
+          "start_date": 1671238800000,
+          "end_date": 1702774800000
+        }
+      ],
+      "password": "$2b$05$h7GuRsIwCJCMCDHRCbS8JuKLJ/NTgtOzpYYcD/8g/kj8odAE2VCWO",
+      "role": "user",
+      "sub": []
+    }
+  ]
+}

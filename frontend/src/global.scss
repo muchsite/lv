@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/Inter/static/Inter_18pt-Light.ttf") format("truetype"),
+    url("./assets/Inter/static/Inter_18pt-Medium.ttf") format("truetype"),
+    url("./assets/Inter/static/Inter_18pt-Regular.ttf") format("truetype"),
+    url("./assets/Inter/static/Inter_24pt-Black.ttf") format("truetype"),
+    url("./assets/Inter/static/Inter_28pt-SemiBold.ttf") format("truetype"),
+    url("./assets/Inter/static/Inter_28pt-Regular.ttf") format("truetype"),
+    url("./assets/Inter/static/Inter_28pt-Medium.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+
+:root {
+  --background: #f5f5fa;
+  --background-card: #fff;
+  --primary: #1e5cbe;
+  --primary-dark: #1450af;
+  --secondary: #5591ff;
+  --white: #ffffff;
+  --shadow: #3866ff2d;
+  --text-primary: #3d4650;
+  --text-secondary: #69727b;
+  --text-muted: #b5bdc4;
+  --svg-fill: invert(50%) sepia(16%) saturate(4161%) hue-rotate(199deg);
+  --svg-inactive: invert(100%) sepia(35%) saturate(1547%) hue-rotate(177deg)
+    brightness(99%) contrast(87%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a2e;
+    --background-card: #383b53;
+    --primary: #162138;
+    --primary-dark: #000000;
+    --secondary: #85aeeb;
+    --white: #ffffff;
+    --shadow: #e0e6faa9;
+    --text-primary: #d1d5db;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    --svg-fill: invert(50%) sepia(16%) saturate(4161%) hue-rotate(199deg);
+    --svg-inactive: invert(100%) sepia(35%) saturate(1547%) hue-rotate(177deg)
+      brightness(99%) contrast(87%);
+  }
+}
+
+label {
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+input {
+  color: var(--text-color);
+}
+
+input {
+  background-color: var(--background-color);
+}
+
+::placeholder,
+option,
+select {
+  color: var(--text-color2);
+}
